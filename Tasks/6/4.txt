@@ -1,0 +1,70 @@
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Attr;
+import org.w3c.dom.Document;
+import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+
+//вместо SAX използвам DOM
+public class Main {
+  private static boolean skipNL;
+
+  public static void main(String[] args) throws Exception {
+    DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+    dbf.setValidating(false);
+    DocumentBuilder builder = dbf.newDocumentBuilder();
+    InputSource source = new InputSource("rss.xml");
+    // InputSource source = new InputSource(new StringReader(""));
+    Document document = builder.parse(source);
+    System.out.println(printXML(document.getDocumentElement()));
+  }
+
+  private static String printXML(Node rootNode) {
+    String tab = "";
+    skipNL = false;
+    return (printXML(rootNode, tab));
+  }
+
+  private static String printXML(Node rootNode, String tab) {
+    String print = "";
+    if (rootNode.getNodeType() == Node.ELEMENT_NODE) {
+      print += "<" + rootNode.getNodeName();
+      NamedNodeMap attributes = rootNode.getAttributes();
+      for (int j = 0; j < attributes.getLength(); j++) {
+// равя проверка за всеки атрибут на елемента към изходния текст
+        Attr attr = (Attr) attributes.item(j);
+        if (attr != null) {
+          print += String.format("%s='%s'", attr.getNodeName(), attr.getNodeValue());
+        }
+      }
+      print += ">";
+    }
+
+    NodeList nl = rootNode.getChildNodes();
+    if (nl.getLength() > 0) {
+ // прибавям чрез рекурсия съдържанието на всеки под-елемент
+      for (int i = 0; i < nl.getLength(); i++) {
+        print += printXML(nl.item(i), tab);
+      }
+    } else {
+      if (rootNode.getNodeValue() != null) {
+ // съдържанието трябва да е с главни букви 
+        print = rootNode.getNodeValue().toUpperCase();
+      }
+      skipNL = true;
+    }
+
+    if (rootNode.getNodeType() == Node.ELEMENT_NODE) {
+      if (!skipNL) {
+        print += "\n" + tab;
+      }
+      skipNL = false;
+//затварям тага на елемента
+      print += "</" + rootNode.getNodeName() + ">";
+    }
+    return (print);
+  }
+}

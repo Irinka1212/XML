@@ -1,0 +1,10 @@
+ul li {
+    color:#660000;
+    background-color:white;
+    list-style-type:disc;/*списък като тип*/
+}
+ul li li {
+    color:#660000;
+    background-color:white;
+    list-style-type:circle
+}

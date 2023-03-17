@@ -1,0 +1,60 @@
+body {
+	color: brown;
+}
+/*пъряият такъв елемент*/
+p:first-of-type {
+	background: green;
+	color: yellow;
+}
+/*селектира всички елементи p с атрибут lang=en-us/lang=en-gb */
+p[lang=en-us], p[lang=en-gb] {
+	color: black;
+}
+p.warning {
+	color: red;
+}
+/*span маркира за целите на стилизирането част от текста, която не притежава структурно значение*/
+span[lang=en-us] {
+	color: green;
+}
+/*пряк наследник*/
+p.warning > span:not([lang]) {
+	background-color: yellow;
+	color: blue;
+}
+/*главно съдържание*/
+#maincontent {
+	border: 1px solid blue;
+}
+span.warning {
+	color: red;
+}
+/*div маркира за целитена стилизирането поредица от елементи.*/
+/*ще се приложи за елемента div,ако той веднага следва след p*/
+p + div {
+	color: orange;
+	text-transform: uppercase;
+	text-indent: 15px;
+}
+/*ще се приложи за елемента p,ако той веднага следва след div*/
+div + p {
+	color: blue;
+}
+/*чрез first-line псевдо-елемент има различно представяне на първата линия от дадено съдържание*/
+div + p::first-line {
+	background-color: green;
+	color: yellow;
+}
+/*Псевдо-елементът first-letter се използва за така наречените бити букви*/
+/*Първата буква от текста ще се представи със зададения стил*/
+div + p:first-letter {
+	color: orange;
+	font-size: 40px;
+}
+span + div {
+	color: red;
+}
+code + div {
+	color: green;
+}
+	

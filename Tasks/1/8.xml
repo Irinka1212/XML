@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--от дадения сайт гледам информацията за програмата и пиша, елементите, под елементите и т.н-->
+<Cinema name="Cinema City Paradise">
+<Address>София, бул. Черни връх 100, в сградата на Paradise Center</Address>
+<Telephone> 02 903 74 74 </Telephone>
+<Email>info.paradise@cinemacity.bg</Email>
+<Info> 14 модерни киносалона с 2166 места
+• първата 4DX зала в България
+• съоръжения за посетители в инвалидни колички
+• Посетителите на Парадайз център ползват 2 часа безплатен паркинг. За допълнителни 90 минути е необходимо да валидирате талона си за паркиране  на касите при закупуване на билетите за кино.
+Цени на билети, онлайн продажба и резервации на cinemacity.bg
+Наемане на зали: (02) 903 74 74
+Продажба на ваучери за кино: (02) 903 74 74
+</Info>
+<site>cinemacity.bg</site>
+<!--аз избрах програмата да е по дни, показва филмите с часовете им, но може и да се направи по какви филми има и те в кои дни и часове се излъчват-->
+<Program>
+<Monday>
+<Films>
+<Film name="100% Вълк">
+<Time time="13:40"/>
+</Film>
+<Film name="Бебе Бос: Семейни работи">
+<Time time="13:50"/>
+</Film>
+<Film name="Венъм 2:Време е за Карнидж 3D">
+<Times>
+<Time>13:20</Time>
+<Time>14:30</Time>
+<Time>15:40</Time>
+<Time>16:30</Time>
+<Time>17:10</Time>
+<Time>17:50</Time>
+<Time>18:30</Time>
+<Time>19:15</Time>
+<Time>19:50</Time>
+<Time>20:30</Time>
+<Time>21:10</Time>
+<Time>22:00</Time>
+<Time>22:40</Time>
+</Times>
+</Film>
+<Film name="Дюн 3D">
+<Times>
+<Time>13:10</Time>
+<Time>14:40</Time>
+<Time>16:10</Time>
+<Time>17:40</Time>
+<Time>19:20</Time>
+<Time>20:40</Time>
+<Time>21:40</Time>
+<Time>22:20</Time>
+</Times>
+</Film>
+<Film name="Пес патрул:Филмът">
+<Times>
+<Time>13:30</Time>
+<Time>15:20</Time>
+</Times>
+</Film>
+<Film name="Последният дуел">
+<Times>
+<Time>16:00</Time>
+<Time>19:10</Time>
+<Time>20:50</Time>
+<Time>22:15</Time>
+</Times>
+</Film>
+<Film name="Семейство Адамс 2">
+<Times>
+<Time>13:10</Time>
+<Time>14:10</Time>
+<Time>15:10</Time>
+<Time>16:10</Time>
+<Time>17:15</Time>
+<Time>18:40</Time>
+</Times>
+</Film>
+<Film name="Смъртта може да почака">
+<Times>
+<Time>13:40</Time>
+<Time>15:50</Time>
+<Time>17:00</Time>
+<Time>18:10</Time>
+<Time>19:00</Time>
+<Time>20:20</Time>
+<Time>21:20</Time>
+<Time>22:10</Time>
+</Times>
+</Film>
+<Film name="Хелоун убива">
+<Times>
+<Time>13:20</Time>
+<Time>15:45</Time>
+<Time>18:00</Time>
+<Time>19:20</Time>
+<Time>20:10</Time>
+<Time>21:30</Time>
+<Time>22:30</Time>
+</Times>
+</Film>
+</Films>
+</Monday>
+<Tuesday>...</Tuesday>
+<Wednesday>...</Wednesday>
+<Thursday>...</Thursday>
+<Friday>...</Friday>
+<Saturday>...</Saturday>
+<Sunday>...</Sunday>
+</Program>
+</Cinema>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE channel SYSTEM "channel.dtd">
+<!--външно DTD-->
+<channel version="1.0">
+<!--<!ATTLIST channel version CDATA "0.0">, елемент с атрибут version-->
+<!--<!ELEMENT channel (item+,title,link,language?,image*,description)>, под-елементите на channel, item и image могат да се срещат много пъти, ? за language защото срещаме само веднъж -->
+<item>
+<!--<!ELEMENT item ((title,link,description*)|(description*,title,link)|(description?,link,title)|(title,description?,link)|(link,title,description*)|(link, description?, title))>,
+ под елементите на item нямат последователност, за това се задават по различни начини, description се среща само веднъж, незадължителен-->
+<link>https://rss.com/index.html</link>
+<title>RSS</title>
+</item>
+<item>
+<description>RSS specification 2</description>
+<title>RSS2</title>
+<link>https://rss.com/index.html</link>
+</item>
+<item>
+<link>https://rss.com/index.html</link>
+<title>RSS3</title>
+<description>RSS specification 3</description>
+</item>
+<title>Title of the channels</title>
+<link>https://rss.com</link>
+<language>EN</language>
+<image>
+<!--<!ELEMENT image (title|link|url)*>, това са под елементите на image дефинирани, те могат да се срещат по много пъти-->
+<url>https://rss.com/images/rss.png</url>
+<title>RSS Schema</title>
+<link>Go to our page</link>
+</image>
+<image>
+<url>https://rss.com/images/rss.pif</url>
+<title>RSS Schema</title>
+<link>Go to our page</link>
+</image>
+<description>Description of the channels</description>
+</channel>

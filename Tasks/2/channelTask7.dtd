@@ -1,0 +1,25 @@
+<!ENTITY % titleElementName "title"> <!--правя параметрично entity по условие-->
+<!--персонализирам имената на елементите и други имена-->
+<!ELEMENT %titleElementName; (#PCDATA)>
+<!ENTITY % channelElements "(item+,%titleElementName;,link, language?, image*, description)" > <!--вложено entity в entity-->
+<!ELEMENT channel %channelElements;>
+
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT image (title | link | url)*>
+
+<!ATTLIST image src ENTITY #REQUIRED> <!--рекурсивно entity-->
+
+<!ATTLIST channel version CDATA "0.0">
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+
+<!NOTATION JPG SYSTEM "image/jpeg"> <!--нотация за image/jpeg-->
+<!NOTATION GIF PUBLIC "GIF 1.0"> <!--нотация за image/gif-->
+<!NOTATION PNG PUBLIC "PNG 1.0" "imape/png">  <!--нотация за image/png-->
+
+<!ENTITY xmlJPGAddress SYSTEM "https://eathenasolutions.com/wp-content/uploads/Fotolia_12413408_XS.jpg" NDATA JPG> <!--частно unparsed entity за jpg, след NDATA има дефинираната нотация-->
+<!ENTITY xmlPNGAddress SYSTEM "https://eathenasolutions.com/wp-content/uploads/Fotolia_12413408_XS.jpg" NDATA PNG> <!--частно unparsed entity за png-->
+<!ENTITY W3GIFAddress PUBLIC "-//W3C//GIF logo//EN" "https://w3.org/2008/site/images/logo-w3c-screen-lg" NDATA GIF> <!--публично unparsed entity за gif-->
+
+<!ENTITY goto "Go to our page"> <!--общо entity за link-->

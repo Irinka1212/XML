@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--дефинирам една единица, за да няма повторения на URL-a-->
+<!DOCTYPE rdf:RDF [
+<!ENTITY cd "http://www.myshop.bg/cd/">
+]>
+<!--пространствата от имена-->
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cd="http://www.myshop.bg/cd#">
+	<!--ресурсите с техните свойства-->
+	<rdf:Description rdf:about="&cd;Unchain my heart">
+		<cd:artist>Joe Cocker</cd:artist> <!--чрез cd:artist слагам елемента като свойство-->
+		<cd:country>USA</cd:country> <!--чрез cd:country слагам елемента като свойство-->
+		<cd:company>EMI</cd:company> <!--чрез cd:company слагам елемента като свойство-->
+		<cd:price>8.20</cd:price> <!--чрез cd:price слагам елемета като свойство-->
+		<cd:year>1987</cd:year> <!--чрез cd:year слагам елемента като свойство-->
+	</rdf:Description>
+	<rdf:Description rdf:about="&cd;Pavarotti Gala Concert">
+		<cd:artist>Luciano Pavarotti</cd:artist>
+		<cd:country>UK</cd:country>
+		<cd:company>DECCA</cd:company>
+		<cd:price>9.90</cd:price>
+		<cd:year>1991</cd:year>
+	</rdf:Description>
+	
+	<rdf:Description rdf:about="&cd;Soulsville">
+		<cd:artist>Jorn Hoel</cd:artist>
+		<cd:country>Norway</cd:country>
+		<cd:company>WEA</cd:company>
+		<cd:price>7.90</cd:price>
+		<cd:year>1996</cd:year>
+	</rdf:Description>
+</rdf:RDF>

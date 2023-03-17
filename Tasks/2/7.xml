@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE channel SYSTEM "channelTask7.dtd">
+<!--външно DTD-->
+<channel version="1.0">
+<item>
+	<link>https://rss.com/index.html</link>
+	<title>RSS</title>
+</item>
+<item>
+	<description>RSS specification 2</description>
+	<title>RSSz</title>
+	<link>https://rss.com/index.html</link>
+</item>
+<item>
+	<link>https://rss.com/index.html</link>
+	<title>RSS3</title>
+	<description>RSS specification 3</description>
+</item>
+<title>Title of the channel</title>
+<link>https://rss.com</link>
+<language>EN</language>
+<image src="xmlJPGAddress">
+	<url>https://rss.com/images/rss.png</url>
+	<title>RSS Schema</title>
+	<link>&goto;</link>
+	<!--entity се използва през референция, която я оказва-->
+</image>
+<image src="xmlPNGAddress">
+	<url>https://rss.com/images/rss.gif</url>
+	<title>RSS Schema</title>
+	<link>&goto;</link>
+</image>
+<description>Description of the channel</description>
+</channel>

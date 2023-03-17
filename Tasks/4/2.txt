@@ -1,0 +1,48 @@
+/catalog/cd[id("8c0a600b")]//track[@length='4:04']
+<!-- Стойностите на всички track елементи, чиито атрибут length е равен на '4:04' и са включени в елемент cd, имащ id равно на 8c0a600b-->
+<!--@ е за всички атрибути, id е функция-->
+
+/catalog//track[position() mod 2 = 0]
+<!-- Всички track елементи на четни позиции, mod взима остатъка, position() взима позицията на елемента-->
+/catalog//track[position() mod 2 != 0] 
+<!-- Всички track елементи на нечетни позиции-->
+
+/catalog//track[string-length() > 35]
+<!--Стойностите на всички track елементи, чиято дължина на текста е по-голяма от 35-->
+<!--string-length() взима дължината на текста-->
+
+/catalog//track[string-length() > 15]/string-length()
+<!--Дължината на текста на всички track елементи, чиято дължина на текста е по-голяма от 15-->
+<!--отзад слагам елемента, който искам да се изведе и това е дълйината на текста -->
+
+/catalog/cd//track[last()]
+<!--Последния track елемент от всяко cd, last() взима последния елемент-->
+
+/catalog/cd//track[position() = 5]
+<!--Петия track елемент от всяко cd-->
+
+/catalog/cd//track[count(@length)= 1]
+<!-- Броя на track елементите за всяко cd, count брои елементите-->
+
+/catalog//track[matches(text(), 'Ya soshla s uma')]
+<!--Всички track елементи, които съдържат 'Ya soshla s uma', matches взима тези елементи-->
+
+/catalog//track[starts-with(text(), 'D')]
+<!--Всички track елементи, които започват с буквата 'D', starts-with взима тези елементи-->
+
+/catalog//track[ends-with(text(), 'sta')]
+<!--Всички track елементи, които завършват с израза 'sta', ends-with взима тези елементи-->
+
+/catalog//track[upper-case(text())]
+<!--Стойностите на всички track елементи, разпечатани с главни букви, upper-case взима тези елементи-->
+
+//*[track[@length="3:55"][text(), 'Robot (Robotronik)']]/../year
+<!--Стойността на елемента year, който е под-елемент на елемента cd, съдържащ под-под-елемент track с length = '3:55' и имащ стойност 'Robot (Robotronik)'-->
+<!--има две условия за track и за това ги записвам [][]  и се иска годината и за това я пиша отзад-->
+
+avg(//tracklist/count(track))
+<!--Среден брой track елементи от всички налични cd елементи, avg взима тези елементи-->
+
+catalog/cd/concat("Title: ", title/text(), "; Published in: ", year)
+<!--За всеки елемент cd извеждам стойността на под-елементите му title и year, спазвайки следния модел:
+Заглавие: title_value; Година на издаване: year_value чрез concat -->

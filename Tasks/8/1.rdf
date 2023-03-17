@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!--дефинирам пространствата от имена-->
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bc="https://learn.fmi.uni-sofia.bg/">
+   <rdf:Description rdf:about="https://learn.fmi.uni-sofia.bg/course/view.php?id=3660">
+      <bc:title>XML technologies for Semantic Web, winter semester 2017/2018</bc:title>
+      <bc:author>Prof. Boyan Bontchev</bc:author>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--standalone="no" го пиша, защото може да се валидира само със схема-->
+<!--дефинирам xsd схемата с този синтаксис-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!--указва, че елементите и типовете данни на схемата идват от пространството от имена и те трябва дабъдат с префикс xs-->
+<xs:element name="collection">
+<!--!ElEMENT collection(descriotion, recipe*), пространството collection  дефинираноот схемата-->
+	<xs:complexType>
+	<!--има сложни елементи, асоциирани със сложен тип-->
+	<xs:sequence>
+	<!--тип дефиниция-->
+			<xs:element ref="description"/>
+			<!--само за глобални типове, ref за преизползване на типове-->
+			<xs:element ref="recipe" minOccurs="0" maxOccurs="unbounded"/>
+			<!--задавам стойности за minOccurs и maxOccurs-->
+	</xs:sequence>
+	</xs:complexType>
+</xs:element>
+<!--дефинирам елементите от прост тип по този начин, като задавам име и понякога и типа на елемента-->
+<xs:element name="description">
+<!--!ELEMENT description ANY-->
+</xs:element>
+<xs:element name="recipe">
+<!--!ElEMENT recipe(title,ingridient*, preparation, comment?, nutrition)-->
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="title"/>
+			<xs:element ref="ingredient" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="preparation"/>
+			<xs:element name="comment"  minOccurs="0"/>
+			<!--използва се само веднъж и за това го дефинирам като прост елемент, maxOccurs по подразбиране е 1-->
+			<xs:element ref="nutrition"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+<xs:element name="title">
+<!--!ELEMENT title (#PCDATA)-->
+</xs:element>
+<xs:element name="ingredient">
+<!--!ELEMENT ingridient (preparation?)-->
+	<xs:complexType>
+	<xs:sequence>
+		<xs:element ref="ingredient" minOccurs="0" maxOccurs="unbounded" />	
+		<xs:element ref="preparation" minOccurs="0"/>
+	</xs:sequence>
+	
+	<xs:attribute name="name" type="xs:string" use="required"/>
+	<!--name CDATA #REQUIRED, за това има use="required" и тип стринг-->
+	<xs:attribute name="amount" type="xs:string" use="optional"/>
+	<!--amount CDATA #IMPLIED, за това има use="optional"-->
+	<xs:attribute name="unit" type="xs:string" use="optional"/>
+	<!--unit CDATA #IMPLIED-->
+	</xs:complexType>
+</xs:element>
+<xs:element name="preparation">
+<!--!ELEMENT preparation (step*)-->
+	<xs:complexType>
+	<xs:sequence>
+			<xs:element ref="step"  minOccurs="0" maxOccurs="unbounded"/>
+	</xs:sequence>
+	</xs:complexType>
+</xs:element>
+<xs:element name="step">
+<!--!ELEMENT step (#PCDATA)-->
+</xs:element>
+<xs:element name="comment">
+<!--!ELEMENT comment (#PCDATA)-->
+</xs:element>
+<xs:element name="nutrition">
+<xs:complexType>
+<!--<!ATTLIST nutrition protein CDATA #REQUIRED
+                    carbohydrates CDATA #REQUIRED
+                    fat CDATA #REQUIRED
+                    calories CDATA #REQUIRED
+                    alcohol CDATA #IMPLIED>-->
+					
+	<xs:attribute name="protein" type="xs:string" use="required"/> 
+	<xs:attribute name="carbohydrates" type="xs:string" use="required"/>
+	<xs:attribute name="fat" type="xs:string" use="required"/>
+	<xs:attribute name="calories" type="xs:string" use="required"/>
+	<xs:attribute name="alcohol" type="xs:string" use="required"/>
+</xs:complexType>
+</xs:element>
+</xs:schema>

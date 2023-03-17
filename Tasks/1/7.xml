@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<employees:record xmlns:employees="http://employees.org/" xmlns:biblio="http://biblio.org/">
+<!--za da se osiguri unikolnostta na imenata na XML prostranstvoto se izpolzva URI-->
+<employees:name>Miller</employees:name>
+<employees:title>Dr. </employees:title> <!--poneje title se povtarq imame prostranstvo ot imena i pravq unikalni imena chrez prefiks i imeto-->
+<employees:publications> <!--moje i purvite atributi da sa default i sledvashtite da sa unikalni i pak shte raboti po podrazbirane-->
+<biblio:book>
+<biblio:title>A true story</biblio:title>
+<biblio:description>...</biblio:description>
+</biblio:book>
+</employees:publications>
+</employees:record>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--декларираме UTF-8, за да не излезе грешка, то включва 7-битовия ASCII-->
+<!--CDATA секция представя текстово съдържание на XML елемент и позволява включване на специални XML знаци-->
+<!--Пиша условието,оператора,примера и описанието като атрибути, другият вариант е като табличен вид да го напиша с <![CDATA[
+CONDITION                |    OPERATOR   | FORMULA example  |    Description
+Equal to                         =             =A1=B1         The formula returns TRUE if value in cell A1 is equal to the values of cell B1;FALSE otherwise.
+Not equal to                    <>             =A1<>B1        The formula returns TRUE if value in cell A1 is not equal to the value of cell B1;FALSE otherwise.
+Greater than                     >             =A1>B1         The formula returns TRUE if value in cell A1 is greater than a value in cell B1;otherwise it returns FALSE.
+Less than                        <             =A1<B1         The formula returns TRUE if value in cell A1 is less than in cell B1;FALSE otherwise.
+Greater than or equal to        >=             =A1>=B1        The formula returns TRUE if value in cell A1 is greater than or equal to the values in cell B1;FALSE otherwise.
+Less than or equal to           <=             =A1<=B1        The formula returns TRUE if value in cell A1 is less than or equal to the values in cell B1;FALSE otherwise.
+]]>,разбира се, като има и коренов елемент-->
+<ExcelLogicalOperators>
+<ExcelLogicalOperator>
+<Condition>Equal to</Condition>
+<Operator><![CDATA[=]]></Operator>
+<FormulaExample><![CDATA[=A1=B1]]></FormulaExample>
+<Description>The formula returns TRUE if a value in cell A1 is equal to the values in cell B1; FALSE otherwise.
+<!--![CDATA[if(A1==B1) allert("TRUE")
+		else allert("FALSE")]]> е също възможно и надолу може да се приложи-->
+</Description>
+</ExcelLogicalOperator>
+<ExcelLogicalOperator>
+<Condition>Not equal to</Condition>
+<Operator><![CDATA[<>]]></Operator>
+<FormulaExample><![CDATA[=A1<>B1]]></FormulaExample>
+<Description>The formula returns TRUE if a value in cell A1 is not equal to the value in cell B1; FALSE otherwise.
+</Description>
+</ExcelLogicalOperator>
+<ExcelLogicalOperator>
+<Condition>Greater than</Condition>
+<Operator><![CDATA[>]]></Operator>
+<FormulaExample><![CDATA[=A1>B1]]></FormulaExample>
+<Description>The formula returns TRUE if a value in cell A1 is greater than a value in cell B1; otherwise it returns FALSE.
+</Description>
+</ExcelLogicalOperator>
+<ExcelLogicalOperator>
+<Condition>Less than</Condition>
+<Operator><![CDATA[<]]></Operator>
+<FormulaExample><![CDATA[=A1<B1]]></FormulaExample>
+<Description>The formula returns TRUE if a value in cell A1 is less than in cell B1; FALSE otherwise.</Description>
+</ExcelLogicalOperator>
+<ExcelLogicalOperator>
+<Condition>Greater than or equal to</Condition>
+<Operator><![CDATA[>=]]></Operator>
+<FormulaExample><![CDATA[=A1>=B1]]></FormulaExample>
+<Description>The formula returns TRUE if a value in cell A1 is greater than or equal to the values in cell B1; FALSE
+otherwise.</Description>
+</ExcelLogicalOperator>
+<ExcelLogicalOperator>
+<Condition>Less than or equal to</Condition>
+<Operator><![CDATA[<=]]></Operator>
+<FormulaExample><![CDATA[=A1<=B1]]></FormulaExample>
+<Description>The formula returns TRUE if a value in cell A1 is less than or equal to the values in cell B1; FALSE
+otherwise.</Description>
+</ExcelLogicalOperator>
+</ExcelLogicalOperators>

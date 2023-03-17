@@ -1,0 +1,30 @@
+/catalog/cd/child::tracklist
+/catalog/cd/child::year
+<!--Избирам tracklist и year и извеждам тяхните стойности, tracklist и year са деца на cd-->
+
+/catalog/cd/child::tracklist[attribute::num]
+/catalog/child::cd[attribute::id]
+<!--Избирам атрибутите num и id съответно на елементите tracklist и cd-->
+
+//track[text() = "Doschitay do sta (Countdown)"]/preceding-sibling::*
+<!-- Избирам всички елементи track, които се намират преди track елемента със стойност 'Doschitay do sta (Countdown)'-->
+<!--preceding-sibling взима елементите сестри/братя преди себе си, в случая track и * е за всички преди-->
+
+//track[text() = "Doschitay do sta (Countdown)"]/following-sibling::*
+ <!--Избирам всички елементи track, които се намират след track елемента със стойност 'Doschitay do sta (Countdown)'-->
+<!--following-sibling взима елементите сестри/братя следсебе си, в случая track и * е за всички след-->
+
+//track[text() = "Doschitay do sta (Countdown)"]/following-sibling::track[attribute::length = "4:04"]
+<!--Избирам всички елементи track, които се намират след track елемента със стойност 'Doschitay do sta (Countdown)' и имат стойност на атрибута length '4:04'-->
+
+//cd/descendant::*
+<!--Всички стойности на под-елементите на всички елементи cd в документа-->
+
+//descendant-or-self::node()/*[attribute::id]
+<!--Стойностите на всички елементи, които имат атрибут с име id-->
+
+//descendant-or-self::node()/*[attribute::*]
+<!--Стойностите на всички елементи, които имат какъвто и да било атрибут-->
+
+max(//*/@num)
+<!-- Атрибута num с максимална стойност-->

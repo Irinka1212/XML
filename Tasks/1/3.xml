@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<bookstore><!--гледаме по схемата и bookstore  кореновият елемент--> 
+<book category="Food"><!--кръщаваме си категорията и пишем атрибутите по категорията-->
+<title lang="en">Everyday Italian</title>
+<author>Giada De Laurentiis</author>
+<year>2005</year>
+<price>30.00</price>
+</book>
+</bookstore>

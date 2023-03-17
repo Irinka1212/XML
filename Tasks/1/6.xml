@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><!--encoding ISO-8859-1 ne raboti na moq browser za tezi simvoli, poneje vzima purvite 256 unicodes, dokato UTF-8 moje da prochete vseki unicode-->
+<Expressions>
+<Expression id="1">∀ x ∈ {y-10, y+10} ∃ i</Expression>
+<Expression id="2">Einführung</Expression>
+<Expression id="3">Γεια Γιάννη</Expression>
+<Expression id="4">嗨你好</Expression>
+</Expressions>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="collection.xsd">
+<description>
+</description>
+<recipe>
+<title></title>
+<ingredient name=""></ingredient>
+<ingredient name="" amount="" unit=""></ingredient>
+<preparation>
+<step>..</step>
+</preparation>
+<comment></comment>
+<nutrition protein="" carbohydrates="" fat="" calories="" alcohol=""/>
+</recipe>
+</collection>

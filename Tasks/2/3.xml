@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<!DOCTYPE Course_Catalog SYSTEM "courseCatalog.dtd">
+<!--външно DTD-->
+<Course_Catalog>
+<!--ELEMENT Course_Catalog (Department+), трябва да има елемент Course_Catalog с елемент Department, който да се среща повече пъти-->
+<!--<!ATTLIST Department Code (CS | EE | LING) #REQUIRED>, трябва CODE да е зададен като един от тези трите и зпочвам с първото CS и надолу пиша и другите две-->
+<Department Code="CS">
+<!--<!ELEMENT Department (Title, Chair, Course+)>, има тези три елемента, като Course е с + и ще се среща повече-->
+<Title>Computer Sciences</Title>
+<!--<!ELEMENT Title (#PCDATA)>, дефинирам си елемента-->
+<Chair>
+<!--<!ELEMENT Chair (Professor)>, елементът Chair има елемента Professor-->
+<Professor>
+<!--<!ELEMENT Professor (First_Name, Middle_Initial?, Last_Name)>, дефинирам и този елемент с неговото елементно съдържание, ? е защото се среща само веднъж и го записвам по нататък, а тук го пропускам-->
+<First_Name>Jennifer</First_Name>
+<Last_Name>Widom</Last_Name>
+</Professor>
+</Chair>
+<Course Number="CS106A" Enrollment="1070">
+<!--<!ATTLIST Course
+Number (CS106A | CS106B | CS107 | CS109 | CS124 | CS143 | CS145 | CS221 | CS228 | CS229 | EE108A | EE108B | LING180) #REQUIRED
+Enrollment (1070 | 110 | 130 | 180 | 280 | 320 | 500 | 60 | 620 | 90) #IMPLIED
+>,от тук се разбира, че трябва да зададем Number като някое от тези и може да зададем и Enrollment-->
+<!--<!ELEMENT Course (Title, Description?, Instructors, Prerequisites?)>, дефинирам елементите с тяхното съдържание и изисквания и тук избирам да запиша елемента Description-->
+<Title>Programming Methodology</Title>
+<Description>lntroduction to the engineering of computer applications emphasizing modern software engineering principles.</Description>
+<Instructors>
+<!--<!ELEMENT Instructors ((Lecturer, Professor*) | (Professor+, Lecturer?))>, елементът се дефинира по един от двата случая с тяхните изисквания, * означава, че има значение повече пъти-->
+<Lecturer>
+<!--<!ELEMENT Lecturer (First_Name, Middle_Initial?, Last_Name)>-->
+<First_Name>Jerry</First_Name>
+<Middle_Initial>R.</Middle_Initial>
+<Last_Name>Cain</Last_Name>
+</Lecturer>
+<Professor>
+<First_Name>Eric</First_Name>
+<Last_Name>Roberts</Last_Name>
+</Professor>
+<Professor>
+<First_Name>Mehran</First_Name>
+<Last_Name>Sahami</Last_Name>
+</Professor>
+</Instructors>
+</Course>
+<Course Number="CS106B" Enrollment="620">
+<!--тук избирам да запиша елемента Prerequisites,който се среща само веднъж, другите елементи се дефинират по същия начин като отгоре-->
+<Title>Programming Abstractions</Title>
+<Description>Abstraction and its relation to programming.</Description>
+<Instructors>
+<Professor>
+<First_Name>Eric</First_Name>
+<Last_Name>Roberts</Last_Name>
+</Professor>
+<Lecturer>
+<First_Name>Jerry</First_Name>
+<Middle_Initial>R.</Middle_Initial>
+<Last_Name>Cain</Last_Name>
+</Lecturer>
+</Instructors>
+<Prerequisites>
+<!--<!ELEMENT Prerequisites (Prereq+)>-->
+<Prereq>CS106A</Prereq>
+</Prerequisites>
+</Course>
+<!--дефинирам още няколко Course и Department елементи-->
+<Course Number="CS107" Enrollment="500">
+<Title>Computer Organization and Systems</Title>
+<Description>lntroduction to the fundamental concepts of computer systems.</Description>
+<Instructors>
+<Lecturer>
+<First_Name>Julie</First_Name>
+<Last_Name>Zelenski</Last_Name>
+</Lecturer>
+</Instructors>
+<Prerequisites>
+<Prereq>CS106B</Prereq>
+</Prerequisites>
+</Course>
+<Course Number="CS109" Enrollment="280">
+<Title>lntroduction to Probability for Computer Scientists</Title>
+<Instructors>
+<Professor>
+<First_Name>Mehran</First_Name>
+<Last_Name>Sahami</Last_Name>
+</Professor>
+</Instructors>
+<Prerequisites>
+<Prereq>CS1O6B</Prereq>
+</Prerequisites>
+</Course>
+<Course Number="CS124" Enrollment="60">
+<Title>From Languages to Informations</Title>
+<Description>Natural language processing. Cross-listed as LlNG18o.</Description>
+<Instructors>
+<Professor>
+<First_Name>Dan</First_Name>
+<Last_Name>Jurafsky</Last_Name>
+</Professor>
+</Instructors>
+<Prerequisites>
+<Prereq>CS107</Prereq>
+<Prereq>CS109</Prereq>
+</Prerequisites>
+</Course>
+<Course Number="CS143" Enrollment="90">
+<Title>Compilers</Title>
+<Description>Principles and practices for design and implementation of compilers and interpreters.</Description>
+<Instructors>
+<Professor>
+<First_Name>Alex</First_Name>
+<Middle_Initial>S.</Middle_Initial>
+<Last_Name>Aiken</Last_Name>
+</Professor>
+</Instructors>
+<Prerequisites>
+<Prereq>CS107</Prereq>
+</Prerequisites>
+</Course>
+<Course Number="CS145" Enrollment="130">
+<Title>lntroduction to Databases</Title>
+<Description>Databdse design and use of database management systems for applications.</Description>
+<Instructors>
+<Professor>
+<First_Name>Jennifer</First_Name>
+<Last_Name>Widom</Last_Name>
+</Professor>
+</Instructors>
+<Prerequisites>
+<Prereq>CS107</Prereq>
+</Prerequisites>
+</Course>
+<Course Number="CS221" Enrollment="180">
+<Title>ArtifiCidl Intelligence: Principles and Techniques</Title>
+<Instructors>
+<Professor>
+<First_Name>Andrew</First_Name>
+<Last_Name>Ng</Last_Name>
+</Professor>
+<Professor>
+<First_Name>Sebastian</First_Name>
+<Last_Name>Thrun</Last_Name>
+</Professor>
+</Instructors>
+</Course>
+<Course Number="CS228" Enrollment="110">
+<Title>Structured Probabilistic Models: Principles and Techniques</Title>
+<Description>Using probabilistic modeling languages to represent complex domains.</Description>
+<Instructors>
+<Professor>
+<First_Name>Daphne</First_Name>
+<Last_Name>Koller</Last_Name>
+</Professor>
+</Instructors>
+</Course>
+<Course Number="CS229" Enrollment="320">
+<Title>Machine Learnings</Title>
+<Description>A broad introduction to machine learning and statistical pattern recognition.</Description>
+<Instructors>
+<Professor>
+<First_Name>Andrew</First_Name>
+<Last_Name>Ng</Last_Name>
+</Professor>
+</Instructors>
+</Course>
+</Department>
+<Department Code="EE">
+<Title>Electrical Engineerings</Title>
+<Chair>
+<Professor>
+<First_Name>Mark</First_Name>
+<Middle_Initial>A.</Middle_Initial>
+<Last_Name>Horowitz</Last_Name>
+</Professor>
+</Chair>
+<Course Number="EE108A">
+<Title>Digital Systems l</Title>
+<Description>Digital circuit. logic, and system design.</Description>
+<Instructors>
+<Professor>
+<First_Name>Subhasish</First_Name>
+<Last_Name>Mitra</Last_Name>
+</Professor>
+</Instructors>
+</Course>
+<Course Number="EE108B">
+<Title>Digital Systems ll</Title>
+<Description>The design of processor-based digital systems.</Description>
+<Instructors>
+<Professor>
+<First_Name>William</First_Name>
+<Middle_Initial>J.</Middle_Initial>
+<Last_Name>Dally</Last_Name>
+</Professor>
+<Professor>
+<First_Name>Oyekunle</First_Name>
+<Last_Name>Olukotun</Last_Name>
+</Professor>
+</Instructors>
+<Prerequisites>
+<Prereq>EE108A</Prereq>
+<Prereq>CS106B</Prereq>
+</Prerequisites>
+</Course>
+</Department>
+<Department Code="LING">
+<Title>Linguistics</Title>
+<Chair>
+<Professor>
+<First_Name>Beth</First_Name>
+<Last_Name>Levin</Last_Name>
+</Professor>
+</Chair>
+<Course Number="LING180" Enrollment="60">
+<Title>From Languages to Informations</Title>
+<Description>Natural language processing. Cross-listed as CS124.</Description>
+<Instructors>
+<Professor>
+<First_Name>Dan</First_Name>
+<Last_Name>Jurafsky</Last_Name>
+</Professor>
+</Instructors>
+<Prerequisites>
+<Prereq>CS107</Prereq>
+<Prereq>CS109</Prereq>
+</Prerequisites>
+</Course>
+</Department>
+</Course_Catalog>

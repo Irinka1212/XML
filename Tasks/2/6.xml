@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--вътрешно DTD, за да позволява да бъде представен в документа-->
+<!--дефинирам по условие-->
+<!DOCTYPE games [
+<!ELEMENT games (game)*>
+<!ELEMENT game (home-team,ex-team,scores,yellows,reds)>
+<!--футболни отбори, участващи в един мач - home-team,ex-team-->
+<!ELEMENT home-team (#PCDATA)>
+<!ELEMENT ex-team (#PCDATA)>
+<!ELEMENT scores (score)*>
+<!--играчите, получили наказателни картони(жълти и червени)-->
+<!ELEMENT yellows (player)*>
+<!ELEMENT reds (player)*>
+<!ELEMENT score (player)*>
+<!--играчите, отбелязали гол в мача-->
+<!ELEMENT player (#PCDATA)>
+<!--крайният резултат за всеки мач-->
+<!ATTLIST game score CDATA #REQUIRED>
+<!--времето, в което е отбелязан всеки гол-->
+<!ATTLIST score time CDATA #REQUIRED>
+<!ATTLIST score type (field|penalty) #IMPLIED>
+ ]>
+<games>
+	<game score="1-1">
+		<home-team>Roma</home-team>
+		<ex-team>Lazio</ex-team>
+		<scores>
+			<score time="15">
+				<player>Klose</player>
+			</score>
+			<score time="85" type="penalty">
+				<player>Tox</player>
+			</score>
+		</scores>
+		<yellows>
+			<player>Tox</player>
+			<player>Hernanes</player>
+		</yellows>
+		<reds>
+			<player>Kjder</player>
+		</reds>
+	</game>
+</games>

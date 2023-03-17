@@ -1,0 +1,66 @@
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import javax.xml.stream.XMLOutputFactory;
+import javax.xml.stream.XMLStreamConstants;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.stream.XMLStreamWriter;
+
+//вместо SAX  използвам Stax 
+public class Main {
+   public static void main(String[] args) {
+	XMLOutputFactory xmlif = XMLOutputFactory.newInstance();
+	XMLStreamWriter xmlw = null;
+	try {
+ //изходният поток към конзолата
+	  xmlw = xmlif.createXMLStreamWriter(System.out);
+//начало на документа
+	  xmlw.writeStartDocument();
+//начало на корена на документа
+	  System.out.println();
+	  xmlw.writeStartElement("bookstore");
+//извеждам трите елемента книги
+	  writeBook(xmlw, "COOKING", "en", "Everyday Italian", "Giada De Laurentiis", "2005", "30.00");
+	  writeBook(xmlw, "CHILDREN", "en", "Harry Potter", "J. K. Rowling", "2005", "29.99");
+	  writeBook(xmlw, "WEB", "en", "Learning XML", "Erik T. Ray", "2003", "39.95");
+ //край на корена на документа
+	  System.out.println();
+	  xmlw.writeEndElement();
+ //край на потока
+	  xmlw.close();
+	} catch (XMLStreamException e) {
+	    e.printStackTrace();
+	}
+}
+
+//извеждането на книгите
+private static void writeBook(XMLStreamWriter xmlw, Sring category, String lang, String title, String author, String year, String price)
+throws XMLStreamException {
+	System.out.print("\n\t");
+	xmlw.writeStartElement("book");
+	xmlw.writeAttribute("category");
+
+	System.out.print("\n\t\t");
+	xmlw.writeStartElement("title");
+	xmlw.writeAttribute("lang", lang);
+	xmlw.writeCharacters(author);
+	xmlw.writeEndElement();
+
+	System.out.print("\n\t\t");
+	xmlw.writeStartElement("author");
+	xmlw.writeCharacters(author);
+	xmlw.writeEndElement();
+
+	System.out.print("\n\t\t");
+	xmlw.writeStartElement("year");
+	xmlw.writeCharacters(year);
+	xmlw.writeEndElement();
+
+	System.out.print("\n\t\t");
+	xmlw.writeStartElement("price");
+	xmlw.writeCharacters(price);
+	xmlw.writeEndElement();
+
+	System.out.print("\n\t");
+	xmlw.writeEndElement();
+    }
+}

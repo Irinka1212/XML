@@ -1,0 +1,45 @@
+body {
+	background-color: #FFFF00;
+}
+h1 {
+	color: #6b99d1;
+	font-size: 27px;
+	font-weight: bold;
+}
+/*на клас green, елементът table*/
+table.green{
+	/*елементи на css кутия*/
+    border: 3px solid #111111;/*граница*/
+    padding: 0px;/*подложка*/
+    border-spacing: 0px;/*пространсто между границите*/
+    border-collapse: collapse;/*разделяме таблицата на две*/
+    width: 50%;/*широчина*/
+    background-color: #00ff00;/*съдържание*/
+}
+/*на клас blue, елементът table*/
+table.blue{
+    padding: 0px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 50%;
+    border: 3px solid #111111;
+    background-color: #00ffff;
+}
+td {
+	border: 2px solid;
+}
+/*на клас title, елементът td*/
+td.title {
+	font-weight: bold;
+	text-align: center;
+}
+/*на клас second, елементът td*/
+td.second {
+	text-align: right;
+}
+.paragraph {
+	color: brown;
+}
+a {
+	color: green;
+}

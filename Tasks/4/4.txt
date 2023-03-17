@@ -1,0 +1,42 @@
+for $x in /catalog/cd/tracklist
+where $x/@num = '1'
+return $x
+<!--Селектирам всички стойности на елемента track, който е под-елемент на tracklist, имащ атрибут num равен на 1.-->
+<!--записвам всички елементи в /catalog/cd/tracklist в променливата $x, където атрибута num е 1 -->
+
+for $x in /catalog/cd/tracklist
+where $x/@num = '1'
+order by $x ascending 
+return $x 
+<!--Подредете резултата от 1. по азбучен ред използвам order by $x ascending-->
+
+for $x in /catalog/cd/tracklist
+where $x/@num = '1'
+order by $x descending
+return $x 
+<!--Подредете резултата от 1. в обратен азбучен ред, използвам order by $x descending-->
+
+element records
+{
+for $x in catalog/cd
+return
+   element record {
+     attribute cd_ID {$x/@id}, attribute artist {$x/artist},
+     element info {
+       text { "Title:"}, text {$x/title}, text { ", Year:"} ,text{$x/year}, text { ", Track numbers:"}, text{$x/tracklist/count(track)}
+     }
+   }
+}
+<!--създавам в структурата,в която стойностите на CD_ID_VALUE, ARTIST_VALUE, TITLE_VАLUE, YEAR_VALUE, COUNT_OF_TRACKS отговарят съответно на
+ стойностите на атрибута id на елемента cd, на елемента artist, на елемента title, на елемента year, на броя на елементите track за съответния елемент cd-->
+ <!-- $x/tracklist/count(track), така взимам броя тракове-->
+ 
+element tracks
+{
+for $x in catalog/cd/tracklist/track
+return
+   element track {
+     text { $x }
+   }
+}
+<!--Създавам списък със стойността на всички track елементи от всички cd елементи, text { $x }, така взимам траковете-->

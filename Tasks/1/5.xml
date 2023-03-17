@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--замествам с екранни последователности за символи--> 
+<ExcelLogicalOperators>
+<ExcelLogicalOperator>
+<Condition>Equal to</Condition>
+<Operator><![CDATA[=]]></Operator>
+<FormulaExample><![CDATA[=A1=B1]]></FormulaExample>
+<Description>The formula returns TRUE if a value in cell A1 is equal to the values in cell B1; FALSE otherwise.
+<!--![CDATA[if(A1==B1) allert("TRUE")
+		else allert("FALSE")]]> е също възможно и надолу може да се приложи-->
+</Description>
+</ExcelLogicalOperator>
+<ExcelLogicalOperator>
+<Condition>Not equal to</Condition>
+<Operator><![CDATA[<>]]></Operator>
+<FormulaExample><![CDATA[=A1<>B1]]></FormulaExample>
+<Description>The formula returns TRUE if a value in cell A1 is not equal to the value in cell B1; FALSE otherwise.
+</Description>
+</ExcelLogicalOperator>
+<ExcelLogicalOperator>
+<Condition>Greater than</Condition>
+<Operator>&gt;</Operator> <!--<!CDATA[>]]> го замествам с &gt;-->
+<FormulaExample>A1&gt;B1</FormulaExample> <!-- > го замествам с &gt;-->
+<Description>The formula returns TRUE if a value in cell A1 is greater than a value in cell B1; otherwise it returns FALSE.
+</Description>
+</ExcelLogicalOperator>
+<ExcelLogicalOperator>
+<Condition>Less than</Condition>
+<Operator>&lt;</Operator><!--<!CDATA[<]]> го замествам с &lt;-->
+<FormulaExample>A1&lt;B1</FormulaExample><!-- < го замествам с &lt;-->
+<Description>The formula returns TRUE if a value in cell A1 is less than in cell B1; FALSE otherwise.</Description>
+</ExcelLogicalOperator>
+<ExcelLogicalOperator>
+<Condition>Greater than or equal to</Condition>
+<Operator><![CDATA[>=]]></Operator>
+<FormulaExample><![CDATA[=A1>=B1]]></FormulaExample>
+<Description>The formula returns TRUE if a value in cell A1 is greater than or equal to the values in cell B1; FALSE
+otherwise.</Description>
+</ExcelLogicalOperator>
+<ExcelLogicalOperator>
+<Condition>Less than or equal to</Condition>
+<Operator><![CDATA[<=]]></Operator>
+<FormulaExample><![CDATA[=A1<=B1]]></FormulaExample>
+<Description>The formula returns TRUE if a value in cell A1 is less than or equal to the values in cell B1; FALSE
+otherwise.</Description>
+</ExcelLogicalOperator>
+</ExcelLogicalOperators>
