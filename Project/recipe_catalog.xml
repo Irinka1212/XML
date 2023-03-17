@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="recipe_catalogxsl.xsl"?>
+<!DOCTYPE recipesinBG SYSTEM "recipesinBG.dtd">
+<recipesBG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="recipecatalogschema.xsd">
+    <recipeList>
+        <recipe>
+            <recipeInfo>
+                <name>Станимашки сарми</name>
+                <region>Асеновград</region>
+                
+                <author>Народно ястие</author>
+                <id>1</id>
+                <regionId>1001</regionId>
+                <cuisine>Основно ястие</cuisine>
+                <presentation> За любителите на месото ще издам още една кулинарна тайна. Между сармите може да сложите и някоя пържола.</presentation>
+                <numberofIngredients>7</numberofIngredients>
+                <picture src="sarmi" />
+                <method>
+                    Горните съставки се смесват добре.
+                        Киселото зеле се нарязва на малки парчета
+                        (около 5 см х 5 см), като предварително се почиства от жилките.
+                        След това се взима от сместа количество колкото една кафена лъжичка и се завива в парче от киселото зеле.
+                        Продължавате така, докато сместа свърши. На дъното на тенджерата се нареждат зелеви листа, след което се изсипват сармите,
+                        завиват се отгоре със зелеви листа и се долива вода-ЗАДЪЛЖИТЕЛНО ВОДАТА ДА Е ВРЯЛА КАТО ЗАЛИВАТЕ САРМИТЕ.
+                        Тя трябва да е в съотношение 3:1 вода към ориз. Затискате с чиния сармите.
+                        След като заврат, се оставят на умерен огън за около 3 часа, до пълното изпаряване на водата, като наблюдавате сармите да не изгорят.
+                    </method>
+            </recipeInfo>
+            <ingredientList>
+                <ingredient>1 кг кайма (от не много тлъсто свинско месо) или смес свинска и телешка кайма</ingredient>
+                <ingredient>300-350 г ориз</ingredient>
+                <ingredient>10гр млян кимион</ingredient>
+                <ingredient>8гр млян черен пипер</ingredient>
+                <ingredient>200 мл олио</ingredient>
+                <ingredient>1 супена лъжичка червен пипер</ingredient>
+                <ingredient>кисело зеле за завиване на сармите</ingredient></ingredientList>
+            
+            <drinksList>
+                <drink>Червено вино</drink>
+                <drink>Ракия</drink>
+            </drinksList>
+        </recipe>
+        <recipe>
+            <recipeInfo>
+                <name>Пълнено печено агне с кисело зеле по брестовишки</name>
+                <region>Брестовица</region>
+                
+                <author>Народно ястие</author>
+                <id>2</id>
+                <regionId>1002</regionId>
+                <cuisine>Основно ястие</cuisine>
+                <presentation> Свежа зелена салата</presentation>
+                <numberofIngredients>10</numberofIngredients>
+                <picture src="agne" />
+                
+                <method>
+                    <step>
+                        Приготвяне на кавармата:
+                        300 мл олио се затопля и към него се прибавя неколкократно измития със студена вода ориз. Запържва се до златисто жълто.
+                        Към него се прибавя предварително сварената и нарязана на ситно дреболия. Разбърква се добре и се маха от котлона.
+                        Прибавят се ситно нарязаните лук и джоджен. Добавят се черния пипер и сол на вкус.
+                        Към тази смес се добавя половин литър топла вода и се оставя на слаб огън 10 минути да се задуши.
+                        С така приготвената каварма се пълни агнето, предварително осолено отвътре и отвън.
+                        С игла и конец се зашива. Отвън агнето се маже със свинската мас.</step>
+                        <step>Приготвяне на зелето:
+                            Предварително нарязаното зеле с останалата част от олиото и 300 г вода се вари на бавен огън 10 мин.
+                            В голяма тава се слага зелето, върху тавата се поставя метална скара и върху нея пълненото агне.
+                            Агнето се покрива със зелеви листа. Пече се в предварително опалена с дърва фурна като вътре във фурната се поставя котле с вода,
+                            а фурната се затваря с тиклена плоча и се замазва с глинена кал. Пече се 6-8 часа.
+                        </step>
+                </method>
+            </recipeInfo>
+            <ingredientList>
+                <ingredient>1 агне</ingredient>
+                <ingredient>агнешка дреболия</ingredient>
+                    <ingredient>1 кг ориз</ingredient>
+                    <ingredient>0,500 л олио</ingredient>
+                    <ingredient>3 връзки пресен лук</ingredient>
+                    <ingredient>около 15 г сол</ingredient>
+                    <ingredient>1 връзка джоджен </ingredient>
+                    <ingredient>1 пакетче черен пипер</ingredient>
+                    <ingredient>3 кг кисело зеле</ingredient>
+                    <ingredient>200 г свинска мас</ingredient>
+            </ingredientList>
+            <drinksList>
+                <drink>Червено вино</drink>
+                <drink>Бяло вино</drink>
+            </drinksList>
+        </recipe>
+        <recipe>
+            <recipeInfo>
+                <name>Гювеч по вълчидолски</name>
+                <region>Вълчидол</region>
+                <author>Народно ястие</author>
+                <id>3</id>
+                <regionId>1003</regionId>
+                <cuisine>Основно ястие</cuisine>
+                <presentation></presentation>
+                <numberofIngredients>8</numberofIngredients>
+                <picture src="guvech" />
+                <method>
+                    Едно нетлъсто пиле се нарязва и почиства от кожата и мазнините. Вари се около 20 минути след завиране. Препенва се два пъти.
+                    Изсипват се нарязани на едри кубчета един среден морков, два средноголеми патладжана, без да се изцеждат, една тиквичка. Слагат се (в бульона с пилето) и шепа зелен боб, две шепи малки бамички, малко целина, две ситно нарязани червени чушки, може и зелени, глава стар лук или връзка пресен, връзка магданоз, две-три млади нарязани листа от липа или габър. Оставя се бульонът да поври със зеленчуците около 15 минути. Всичко се изсипва в тавичка и се разстила.
+                    Взема се чаша от бульона и в него се разбиват 5 супени лъжици доматен сос. Във втора чаша от бульона се разтварят две ч.л. сол или на вкус. Съдържанието на двете чаши се добавя в тавичката. Тя се напълва до ръба с нарязани на едри кубчета картофи и се залива с останалия бульон.
+                    Пече се на силна фурна (180 градуса) до зачервяване на картофите. След това се покрива с кръгчета пресни червени домати. Не трябва да има картофи, които се виждат под доматите - иначе ще изгорят. За да стане много вкусно, се пече още 45 минути.
+                    Гювечът е най -вкусен на следващия ден, но може да се яде и веднага. Няма почти никакви мазнини и е подходящ при проблеми с жлъчката, черния дроб, панкреаса. Добре се съчетава с охладена бира или червено вино, както и с великолепното вълчидолско вино "Липа".
+                </method>
+            </recipeInfo>
+            <ingredientList>
+                <ingredient>1 пиле</ingredient>
+                   <ingredient> 1 среден морков</ingredient>
+                   <ingredient> 2 средни патладжана</ingredient>
+                   <ingredient> 1 тиквичка</ingredient>
+                    <ingredient> зеленчуци</ingredient>
+                    <ingredient>картофи</ingredient>
+                   <ingredient> доматен сос</ingredient>
+                   <ingredient> сол на вкус</ingredient>
+            </ingredientList>
+            <drinksList>
+                <drink>Червено вино</drink>
+                <drink>Бяло вино</drink>
+            </drinksList>
+        </recipe>
+        <recipe>
+            <recipeInfo>
+                <name>Пълнени чушки по вълчидолски</name>
+                <region>Вълчидол</region>
+                <author>Народно ястие</author>
+                <id>4</id>
+                <regionId>1003</regionId>
+                <cuisine>Основно ястие</cuisine>
+                <presentation></presentation>
+                <numberofIngredients>11</numberofIngredients>
+                <picture src="chushki" />
+                <method>Месото се нарязва на не много едри кубчета. Сварява се добре, като се припенва два пъти. Премахва се всякаква мазнина, останала в бульона. Без да се изважда месото се добавят нарязани на кубчета морковите, лука, целината с листата и дръжките, боба, и патладжана, обелен и нарязан на много ситно, без да се изцежда. След като се сварят зеленчуците (25-30 мин.) се добавя една чаена чаша ориз. Вари се до сваряване, но да остане малко недоварен (твърд). Добавят се 5 супени лъжици доматен сос, и се посолява на вкус (две равни чаени лъжички). Пълнежът трябва да остане воден - по-рядък от този за сарми. Не се добавя никаква мазнина.
+                    Измиват се и се почистват два килограма червени едри чушки (пиперки) "капия". Напълват се с плънката (нищо друго, като брашно например, не се слага) и се нареждат в две тавички (много са за една). Заливат се до половина със студена вълчидолска вода (може и друга, но ястието не става така вкусно). Пиперките се пекат на фурна, докато горната им част започне да прегаря. Нарязват се домати на кръгчета, без да се белят. С тях се покриват напълно чушките. Ястието се оставя във фурната, докато доматите също започнат да прегарят и сладнеят. В този момент ястието е готово.
+                    То е много вкусно и същевременно -- диетично. Няма почти никакви мазнини и е много подходящо при проблеми с жлъчката, черния дроб, панкреаса. Върви добре с охладена бира, може и с вълчидолското вино "Липа", бяло вино или сухо червено вино.
+                </method>
+            </recipeInfo>
+            <ingredientList>
+                <ingredient>500-700 г. пилешко филе (бяло месо)</ingredient>
+                <ingredient>2 кг. едри червени чушки</ingredient>
+                <ingredient>3 едри моркова</ingredient>
+                <ingredient>1 глава лук</ingredient>
+                <ingredient>2 стръка целина</ingredient>
+                <ingredient>1 шепа прясна или замразена бамя</ingredient>
+                <ingredient>1 шепа пресен или замразен зелен боб</ingredient>
+                <ingredient>1 едър патладжан</ingredient>
+                <ingredient>1 ч.ч. ориз</ingredient>
+                <ingredient>5 с.л. доматен сос</ingredient>
+                <ingredient>сол</ingredient>
+            </ingredientList>
+            <drinksList>
+                <drink>Червено вино</drink>
+                <drink>Бяло вино</drink>
+            </drinksList>
+        </recipe>
+        <recipe>
+            <recipeInfo>
+                <name>Пълнен шаран по свищовски</name>
+                <region>Свищов</region>
+                <author>Народно ястие</author>
+                <id>5</id>
+                <regionId>1004</regionId>
+                <cuisine>Основно ястие</cuisine>
+                <presentation></presentation>
+                <numberofIngredients>6</numberofIngredients>
+                <picture src="sharan" />
+                <method> Шаранът се почиства, посолява и се оставя на хладно 2 часа, за да поеме солта. През това време се приготвя плънката: 5-6 глави лук - според шарана - се нарязват на ситно и се слагат в тиган да се запържат леко. Добавя се 1 чаена лъжичка червен пипер и малко черен пипер. Към тях се добавят стафидите и 1-2 лъжици захар - направо в тигана. Посолява се леко. Добавя се малко магданоз, нарязан на дребно. Слагат се 2-3 щипки канела.
+                    След това се сваля от огъня и след малко се добавят 2 чаши чукани орехи. Орехите се почистват и се чукат в хаван, а не се смилат; слагат се, когато сместа не е много гореща, за да не почернеят. Сместа се разбърква добре и шаранът се пълни с нея. Пълнят се и предварително почистените хрилни отвори и главата.                   
+                    Напълненият шаран се слага в тава. Полива се с олио и се поръсва с червен пипер и брашно. Налива се чаша вода и се слага да се пече, като от време на време се полива със соса.
+                    Шаранът се поднася вече поизстинал, за да се усети ароматът на блюдото.
+                </method>
+            </recipeInfo>
+            <ingredientList>
+                <ingredient>1 шаран 2-3 кг.</ingredient>
+                <ingredient>5-6 глави лук</ingredient>
+                <ingredient>2 чаши орехи, чукани в хаван</ingredient>
+                <ingredient>50 гр. стафиди</ingredient>
+                <ingredient>1-2 супени лъжици захар</ingredient>
+                <ingredient>канела, сол, червен пипер,</ingredient>
+                <ingredient>черен пипер, магданоз, брашно, олио</ingredient>
+            </ingredientList>
+            <drinksList>
+                <drink>Бяло вино</drink>
+            </drinksList>
+        </recipe>
+        <recipe>
+            <recipeInfo>
+                <name> Мекици</name>
+                <region>Свищов</region>
+                <author>Народно ястие</author>
+                <id>6</id>
+                <regionId>1004</regionId>
+                <cuisine>закуска</cuisine>
+                <presentation>сладко от боровинки</presentation>
+                <numberofIngredients>7</numberofIngredients>
+                <picture src="mekici" />
+                <method>
+                    Содата се разбърква с киселото мляко. От брашното се прави кладенче и вътре се изсипват всички продукти. Замесва се средно тесто. Разточва се на кора с дебелина около 2 см и се нарязва с остър нож на квадратни мекички с желания размер. Мекиците се пълнят с натрошеното сирене, като се притискат с вилица да се затворят и се пържат в сгорещена мазнина. Тестото не трябва да се разтегля с ръце преди пърженето, за да бухнат мекиците по-добре.
+                </method>
+            </recipeInfo>
+            <ingredientList>
+                <ingredient>2 яйца</ingredient>
+                <ingredient>1 ч.ч. кисело мляко</ingredient>
+                <ingredient>1 ч.л. сода за хляб</ingredient>
+                <ingredient>1 ч.л. сол</ingredient>
+                <ingredient>1 с.л. захар</ingredient>
+                <ingredient>1 с.л. олио</ingredient>
+                <ingredient>около 3-4 ч.ч. брашно</ingredient>
+            </ingredientList>
+            <drinksList>
+                <drink>Айран</drink>
+                <drink>Билков чай</drink>
+            </drinksList>
+        </recipe>
+        <recipe>
+            <recipeInfo>
+                <name> Шопско сирене</name>
+                <region>София</region>
+                <author>Народно ястие</author>
+                <id>7</id>
+                <regionId>1005</regionId>
+                <cuisine>Мезе</cuisine>
+                <presentation></presentation>
+                <numberofIngredients>5</numberofIngredients>
+                <picture src="sirene" />
+                <method>
+                    Сиренето се обезсолява и се нарязва на пет плоски парчета, които се поставят в пет намазани с масло пръстени гювечета. Върху парчетата сирене се поставят кръгчета домат и малко масло. Гювечетата се поставят в силно нагрята фурна за около 5 минути. Изваждат се, върху всяко парче сирене се разлива по едно неразбито яйце и се слага една лютива чушка. Гювечето отново се слага във фурната и се изважда след втвърдяване на яйцата.
+                    Може да се приготви и в едно голямо гювече.</method>
+            </recipeInfo>
+            <ingredientList>
+                <ingredient>500г сирене</ingredient>
+                <ingredient>40г масло</ingredient>
+                <ingredient>5 яйца</ingredient>
+                <ingredient>2 червени домата</ingredient>
+                <ingredient>5 люти чушки</ingredient>
+            </ingredientList>
+            <drinksList>
+                <drink>Бяло вино</drink>
+            </drinksList>
+        </recipe>
+        <recipe>
+            <recipeInfo>
+                <name> Шопска салата</name>
+                <region>София</region>
+                <author>Народно ястие</author>
+                <id>8</id>
+                <regionId>1005</regionId>
+                <cuisine>Салата</cuisine>
+                <presentation></presentation>
+                <numberofIngredients>10</numberofIngredients>
+                <picture src="salata" />
+                <method>
+                    Сиренето се обезсолява и се нарязва на пет плоски парчета, които се поставят в пет намазани с масло пръстени гювечета. Върху парчетата сирене се поставят кръгчета домат и малко масло. Гювечетата се поставят в силно нагрята фурна за около 5 минути. Изваждат се, върху всяко парче сирене се разлива по едно неразбито яйце и се слага една лютива чушка. Гювечето отново се слага във фурната и се изважда след втвърдяване на яйцата.
+                    Може да се приготви и в едно голямо гювече.</method>
+            </recipeInfo>
+            <ingredientList>
+                <ingredient>домати - 2 броя, зрели, червени</ingredient>
+                <ingredient>чушки - 2 брой зелена</ingredient>
+                <ingredient> краставици - 1 брой</ingredient>
+                <ingredient>лук - 1 глава, малка кромид</ingredient>
+                <ingredient> магданоз - за поръсване</ingredient>
+                <ingredient>маслини - 4 - 5 броя, по желание</ingredient>
+                <ingredient>сирене - 150 - 200 г</ingredient>
+                <ingredient>сол - 2 щипки</ingredient>
+                <ingredient>оцет - 1 с.л.</ingredient>
+                <ingredient>зехтин - 1 - 2 с.л.</ingredient>
+            </ingredientList>
+            <drinksList>
+                <drink>Гроздова ракия</drink>
+            </drinksList>
+        </recipe>
+    </recipeList>
+
+    <regionList>
+        <regionInfo>
+			<regionName>Асеновград</regionName>
+			<regionRef regRef="Асеновград" regIdRef="1001"/>
+		</regionInfo>
+        <regionInfo>
+			<regionName>Брестовица</regionName>
+			<regionRef regRef="Брестовица" regIdRef="1002"/>
+		</regionInfo>
+        <regionInfo>
+			<regionName>Вълчидол</regionName>
+			<regionRef regRef="Вълчидол" regIdRef="1003"/>
+		</regionInfo>
+        <regionInfo>
+			<regionName>Свищов</regionName>
+			<regionRef regRef="Свищов" regIdRef="1004"/>
+		</regionInfo>
+        <regionInfo>
+            <regionName>София</regionName>
+            <regionRef regRef="София" regIdRef="1005"/>
+		</regionInfo>
+    </regionList>
+   
+</recipesBG>
+    

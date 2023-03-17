@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!NOTATION jpg SYSTEM "image/jpg">
+<!ENTITY sarmi SYSTEM "images/1.jpg" NDATA jpg >
+<!ENTITY agne SYSTEM "images/2.jpg" NDATA jpg >
+<!ENTITY guvech SYSTEM "images/3.jpg" NDATA jpg >
+<!ENTITY chushki SYSTEM "images/4.jpg" NDATA jpg >
+<!ENTITY sharan SYSTEM "images/5.jpg" NDATA jpg >
+<!ENTITY mekici SYSTEM "images/6.jpg" NDATA jpg >
+<!ENTITY sirene SYSTEM "images/7.jpg" NDATA jpg >
+<!ENTITY salata SYSTEM "images/8.jpg" NDATA jpg >
